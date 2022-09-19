@@ -9,9 +9,25 @@ fun fizzBuzz(n: Int): List<String> {
             i % 3 == 0 && i % 5 == 0 -> "FizzBuzz"
             i % 3 == 0 -> "Fizz"
             i % 5 == 0 -> "Buzz"
-            else -> i.toString();
+            else -> i.toString()
         }
         result.add(item)
     }
-    return result;
+    return result
+}
+
+fun fizzBuzzForEach(n: Int): List<String> {
+
+    val result = mutableListOf<String>()
+
+    (1 .. n).forEach {
+        val item = when {
+            it % 3 == 0 && it % 5 == 0 -> "FizzBuzz"
+            it % 3 == 0 -> "Fizz"
+            it % 5 == 0 -> "Buzz"
+            else -> it.toString()
+        }
+        result.add(item)
+    }
+    return result
 }

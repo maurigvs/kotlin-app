@@ -8,6 +8,7 @@ class FizzBuzzKtTest {
     @Test
     fun `Calling fizzbuzz with "5" returns list with 5 items`() {
         fizzBuzz(5) shouldBeEqualTo listOf("1", "2", "Fizz", "4", "Buzz")
+        fizzBuzzForEach(5) shouldBeEqualTo listOf("1", "2", "Fizz", "4", "Buzz")
     }
 
     @Test
@@ -20,5 +21,6 @@ class FizzBuzzKtTest {
         )
 
         fizzBuzz(16) shouldBeEqualTo list
+        fizzBuzzForEach(16) shouldBeEqualTo list
     }
 }
