@@ -1,4 +1,4 @@
-package br.edu.mauri
+package br.edu.maurigvs
 
 fun main() {
 
