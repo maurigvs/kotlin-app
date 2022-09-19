@@ -8,12 +8,15 @@ plugins {
 group = "br.edu.maurigvs"
 version = "1.0-SNAPSHOT"
 
+// Add jcenter as a repository for dependencies
 repositories {
     mavenCentral()
 }
 
 dependencies {
     testImplementation(kotlin("test"))
+    testImplementation("org.amshove.kluent:kluent:1.68")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.9.0")
 }
 
 tasks.test {
